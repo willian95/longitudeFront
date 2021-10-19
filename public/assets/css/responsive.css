@@ -1,0 +1,122 @@
+
+@media only screen and (max-width:600px) {
+  .brand img {
+    margin: 0;
+ 
+}
+.flex-content{
+  display: grid!important;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+.brand-xs{
+  text-align: start;
+
+}
+.navbar-toggler{
+  text-align: end;
+}
+.video-overlay-play:after {
+
+  font-size: 2em;
+
+ }
+ .banner p {
+
+  color: #fff;
+  padding: 0 1rem;
+
+  text-align: center;
+}
+#navbarNav {
+  position: fixed;
+  right: inherit;
+  top: 3rem;
+  text-align: center;
+  padding-top: 4rem;
+}
+.navbar-nav a {
+  color: #0c4572;
+
+}
+.navbar-expand-md .navbar-nav {
+
+  line-height: 2;
+ 
+}
+.navbar-nav .mr-5 {
+  margin-right: 0rem!important;
+}
+.video-player .btn {
+
+  bottom: 55%;
+}
+.grid-section {
+
+  grid-template-columns: 100%;
+
+}
+.grid-main .item:nth-child(1),.grid-main .item:nth-child(2),.grid-main .item:nth-child(3),.grid-main .item:nth-child(4),.grid-main .item:nth-child(5),.grid-main .item:nth-child(6),.grid-main .item:nth-child(7),.grid-main .item:nth-child(7) {
+  grid-column: none;
+}
+.container-main {
+
+  padding-right: 2rem;
+  padding-left: 2rem;
+
+}
+.grid-proyecto {
+
+  grid-template-columns: repeat(2, 1fr);
+  gap: .1rem;
+}
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+.grid-details .item {
+
+  margin-bottom: 2rem;
+}
+.contact-item .row {
+
+  padding: 1rem;
+
+  width: 20rem;
+}
+.contact-item  .pt-4, .py-4 {
+  padding-top: 0rem!important;
+}
+.contact-item .mt-5, .my-5 {
+  margin-top: 0rem!important;
+}
+.contact {
+
+  height: 110vh;
+}
+.contact-item {
+
+  padding-top: 3rem;
+}
+footer div {
+  position: absolute;
+  bottom: -20px;
+  left: 43%;
+}
+body{
+  overflow-x: hidden;
+}
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { ... }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { ... }
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { ... }
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) { ... }
