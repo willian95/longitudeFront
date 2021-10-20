@@ -40,14 +40,14 @@
                 @if($serviceFile->type == 'png' || $serviceFile->type == 'jpg')
                     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                         <a href="{{ $serviceFile->file }}" data-caption="Sunset in the wheat field<br><em class='text-muted'>© Jordan McQueen</em>" data-width="1200" data-height="900" itemprop="contentUrl">
-                            <img src="{{ $serviceFile->file }}" itemprop="thumbnail" alt="Image description">
+                            <img src="{{ $serviceFile->file }}" itemprop="thumbnail" alt="Image description" class="w-100">
                         </a>
                         {{--<p>Zenith</p>--}}
                     </figure>
                 
                 @elseif($serviceFile->type == 'mp4')
 
-                    <video controls>
+                    <video controls class="w-100">
                         <source src="{{ $serviceFile->file }}" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -78,14 +78,14 @@
                 @if($serviceFile->type == 'png' || $serviceFile->type == 'jpg')
                     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                         <a href="{{ $serviceFile->file }}" data-caption="Sunset in the wheat field<br><em class='text-muted'>© Jordan McQueen</em>" data-width="1200" data-height="900" itemprop="contentUrl">
-                            <img src="{{ $serviceFile->file }}" itemprop="thumbnail" alt="Image description">
+                            <img src="{{ $serviceFile->file }}" itemprop="thumbnail" alt="Image description" class="w-100">
                         </a>
                         {{--<p>Zenith</p>--}}
                     </figure>
                 
                 @elseif($serviceFile->type == 'mp4')
 
-                    <video controls>
+                    <video controls class="w-100">
                         <source src="{{ $serviceFile->file }}" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -115,14 +115,14 @@
                 @if($serviceFile->type == 'png' || $serviceFile->type == 'jpg')
                     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                         <a href="{{ $serviceFile->file }}" data-caption="Sunset in the wheat field<br><em class='text-muted'>© Jordan McQueen</em>" data-width="1200" data-height="900" itemprop="contentUrl">
-                            <img src="{{ $serviceFile->file }}" itemprop="thumbnail" alt="Image description">
+                            <img src="{{ $serviceFile->file }}" itemprop="thumbnail" alt="Image description" class="w-100">
                         </a>
                         {{--<p>Zenith</p>--}}
                     </figure>
                 
                 @elseif($serviceFile->type == 'mp4')
 
-                    <video controls>
+                    <video controls class="w-100">
                         <source src="{{ $serviceFile->file }}" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
