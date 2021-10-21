@@ -89,7 +89,7 @@
             @elseif($serviceFile->type == 'ZIP')
 
                 <iframe
-                    src="{{ $serviceFile->file }}">
+                    src="{{ $serviceFile->file }}" class="w-100">
                 </iframe>
 
             @endif
