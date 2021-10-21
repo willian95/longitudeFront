@@ -40,14 +40,14 @@
         @if($project->type == 'png' || $project->type == 'jpg')
             <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                 <a href="{{ $project->file }}" data-caption="Sunset in the wheat field<br><em class='text-muted'>© Jordan McQueen</em>" data-width="1200" data-height="900" itemprop="contentUrl">
-                    <img src="{{ $project->file }}" itemprop="thumbnail" alt="Image description">
+                    <img src="{{ $project->file }}" itemprop="thumbnail" alt="Image description" class="w-100">
                 </a>
                 {{--<p>Zenith</p>--}}
             </figure>
 
         @elseif($project->type == 'mp4')
 
-            <video controls>
+            <video controls class="w-100">
                 <source src="{{ $project->file }}" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -55,7 +55,7 @@
         @elseif($project->type == 'zip')
 
             <iframe
-                src="{{ $project->file }}">
+                src="{{ $project->file }}" class="w-100" style="min-height: 400px">
             </iframe>
 
         @endif
@@ -71,25 +71,30 @@
 
         <div class="item">
 
-            @if($serviceFile->type == 'png' || $serviceFile->type == 'jpg')
+            @if($serviceFile->type == 'PNG' || $serviceFile->type == 'JPG')
                 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                     <a href="{{ $serviceFile->file }}" data-caption="Sunset in the wheat field<br><em class='text-muted'>© Jordan McQueen</em>" data-width="1200" data-height="900" itemprop="contentUrl">
-                        <img src="{{ $serviceFile->file }}" itemprop="thumbnail" alt="Image description">
+                        <img src="{{ $serviceFile->file }}" itemprop="thumbnail" alt="Image description" class="w-100">
                     </a>
                     {{--<p>Zenith</p>--}}
                 </figure>
+<<<<<<< HEAD
 
             @elseif($serviceFile->type == 'mp4')
+=======
+            
+            @elseif($serviceFile->type == 'MP4')
+>>>>>>> d665f5a6d93a6fb7fa80369b03cf9563b17b11ba
 
-                <video controls>
+                <video controls class="w-100">
                     <source src="{{ $serviceFile->file }}" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
 
-            @elseif($serviceFile->type == 'zip')
+            @elseif($serviceFile->type == 'ZIP')
 
                 <iframe
-                    src="{{ $serviceFile->file }}">
+                    src="{{ $serviceFile->file }}" class="w-100">
                 </iframe>
 
             @endif
