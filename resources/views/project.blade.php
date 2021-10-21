@@ -55,7 +55,7 @@
         @elseif($project->type == 'zip')
 
             <iframe
-                src="{{ $project->file }}">
+                src="{{ $project->file }}" class="w-100">
             </iframe>
 
         @endif
