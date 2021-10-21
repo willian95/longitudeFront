@@ -32,11 +32,11 @@
   </div>
 
   <!-----------grid-2------------->
- <div id="gallery" class=" gallery"> 
+ <div id="gallery" class=" gallery">
 
  <div class="grid grid-main grid-details" >
     <div class="item">
-      
+
         @if($project->type == 'png' || $project->type == 'jpg')
             <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                 <a href="{{ $project->file }}" data-caption="Sunset in the wheat field<br><em class='text-muted'>© Jordan McQueen</em>" data-width="1200" data-height="900" itemprop="contentUrl">
@@ -44,7 +44,7 @@
                 </a>
                 {{--<p>Zenith</p>--}}
             </figure>
-        
+
         @elseif($project->type == 'mp4')
 
             <video controls>
@@ -65,7 +65,7 @@
 
 
 
-  
+
   <div class="grid grid-main grid-details gallery grid-3" >
     @foreach($files as $serviceFile)
 
@@ -78,7 +78,7 @@
                     </a>
                     {{--<p>Zenith</p>--}}
                 </figure>
-            
+
             @elseif($serviceFile->type == 'mp4')
 
                 <video controls>
