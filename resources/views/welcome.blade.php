@@ -17,8 +17,8 @@
     <section class="banner">
         <div class="video-player mb30">
             <video id="bgdvid" autoplay loop playsinline muted>
-                <source src="https://embotellados.labsjoinlife.cl/wp-content/uploads/2021/10/videoplayback-1.mp4" type="video/mp4">
-                <source src="https://embotellados.labsjoinlife.cl/wp-content/uploads/2021/10/videoplayback-1.mp4" type="video/ogg">
+                <source src="{{ url('assets/img/banner.mp4') }}#t=0.1" type="video/mp4">
+                <source src="{{ url('assets/img/banner.mp4') }}#t=0.1" type="video/ogg">
                 Your browser does not support HTML5 video.
             </video>
             <div class="btn play-btn btn-base fa play active" id="play-pause-button">
