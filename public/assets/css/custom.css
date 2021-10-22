@@ -706,3 +706,11 @@ iframe,video{
     width: 100%;
 }
 
+.pswp__img {
+
+    top: -45px;
+    left: -15.5rem ;
+    width: 95%!important;
+    height: 100%!important;
+    object-fit: contain!important;
+}
