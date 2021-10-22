@@ -600,6 +600,7 @@ header{
 }
 .grid-details .item{
   width: 100%;
+  height: 100%;
 }
 .grid-details img {
   object-fit: cover;
@@ -708,8 +709,8 @@ iframe,video{
 
 .pswp__img {
 
-    top: -45px;
-    left: -15.5rem ;
+    top: -45px!important;
+    left: -15.5rem !important;;
     width: 95%!important;
     height: 100%!important;
     object-fit: contain!important;
