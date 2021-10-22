@@ -137,9 +137,12 @@
 
                 @elseif(strtoupper($serviceFile->type) == 'ZIP')
 
-                    <iframe 
-                        src="{{ $serviceFile->file }}"  allowFullScreen="true">
-                    </iframe>
+                    <a href="{{ $serviceFile->file }}" target="_blank">
+                        <iframe 
+                            src="{{ $serviceFile->file }}"  allowFullScreen="true">
+                        </iframe>
+                    
+                    </a>
 
                 @elseif($serviceFile->type == '360')
 
