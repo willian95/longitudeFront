@@ -16,7 +16,7 @@
     </style>
     <section class="banner">
         <div class="video-player mb30">
-            <video id="bgdvid" autoplay loop playsinline muted>
+            <video id="bgdvid" autoplay loop playsinline muted poster="http://imgfz.com/i/olSWfLM.png">
                 <source src="{{ url('/assets/img/banner.mp4') }}" type="video/mp4">
                 <source src="{{ url('/assets/img/banner.mp4') }}" type="video/ogg">
                 Your browser does not support HTML5 video.
