@@ -9,7 +9,12 @@
 
 @section('content')
 
-<div class="contact" style="background-image: url(./assets/img/contact.jpg);">
+<div class="contact" >
+<video class="video-contact" autoplay loop playsinline muted>
+                <source src="{{ url('/assets/img/contactvideo.mp4') }}" type="video/mp4">
+                <source src="{{ url('/assets/img/contactvideo.mp4') }}" type="video/ogg">
+                Your browser does not support HTML5 video.
+            </video>
   <div class="contact-item">
 
 
