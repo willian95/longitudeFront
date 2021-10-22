@@ -115,7 +115,7 @@
 
     @if($service->fileAmount == 4)
     <!-----------grid-3-------------> 
-    <div class="grid grid-main grid-details gallery grid" id="gallery">
+    <div class="grid grid-main grid-details gallery grid-2" id="gallery">
         @foreach($files as $serviceFile)
 
             <div class="item">
