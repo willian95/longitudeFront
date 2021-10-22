@@ -58,6 +58,10 @@
                         src="{{ $serviceFile->file }}">
                     </iframe>
 
+                @elseif($serviceFile->type == '360')
+
+                    {!! $serviceFile->file !!}
+
                 @endif
 
             </div>
@@ -95,6 +99,10 @@
                     <iframe
                         src="{{ $serviceFile->file }}">
                     </iframe>
+                
+                @elseif($serviceFile->type == '360')
+
+                    {!! $serviceFile->file !!}
 
                 @endif
 
@@ -132,6 +140,10 @@
                     <iframe
                         src="{{ $serviceFile->file }}">
                     </iframe>
+
+                @elseif($serviceFile->type == '360')
+
+                    {!! $serviceFile->file !!}
 
                 @endif
 

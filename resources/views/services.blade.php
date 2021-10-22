@@ -68,14 +68,14 @@
         <p> {{ App\Models\Service::find(3)->title }} </p>
       </div>
     </a>
-    <a href="{{ url('service/4') }}" class="item" data-aos="fade-up"
+    {{--<a href="{{ url('service/4') }}" class="item" data-aos="fade-up"
      data-aos-easing="linear"
      data-aos-duration="2100">
       <div>
         <img src="{{ App\Models\Service::find(4)->image }}" alt="">
         <p> {{ App\Models\Service::find(4)->title }} </p>
       </div>
-    </a>
+    </a>--}}
     <a href="{{ url('service/5') }}" class="item" data-aos="fade-up"
      data-aos-easing="linear"
      data-aos-duration="2100">
