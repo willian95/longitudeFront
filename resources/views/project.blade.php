@@ -55,7 +55,7 @@
         @elseif($project->type == 'zip')
 
             <iframe
-                src="{{ $project->file }}" class="w-100" style="min-height: 400px">
+                src="{{ $project->file }}" class="w-100" style="min-height: 400px"  allowFullScreen="true">
             </iframe>
 
         @endif
@@ -78,13 +78,8 @@
                     </a>
                     {{--<p>Zenith</p>--}}
                 </figure>
-<<<<<<< HEAD
 
             @elseif($serviceFile->type == 'mp4')
-=======
-            
-            @elseif($serviceFile->type == 'MP4')
->>>>>>> d665f5a6d93a6fb7fa80369b03cf9563b17b11ba
 
                 <video controls class="w-100">
                     <source src="{{ $serviceFile->file }}" type="video/mp4">
@@ -94,7 +89,7 @@
             @elseif($serviceFile->type == 'ZIP')
 
                 <iframe
-                    src="{{ $serviceFile->file }}" class="w-100">
+                    src="{{ $serviceFile->file }}" class="w-100"  allowFullScreen="true">
                 </iframe>
 
             @endif

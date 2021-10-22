@@ -55,7 +55,7 @@
                 @elseif($serviceFile->type == 'zip')
 
                     <iframe
-                        src="{{ $serviceFile->file }}">
+                        src="{{ $serviceFile->file }}"  allowFullScreen="true">
                     </iframe>
 
                 @elseif($serviceFile->type == '360')
@@ -97,7 +97,7 @@
                 @elseif($serviceFile->type == 'zip')
 
                     <iframe
-                        src="{{ $serviceFile->file }}">
+                        src="{{ $serviceFile->file }}"  allowFullScreen="true">
                     </iframe>
                 
                 @elseif($serviceFile->type == '360')
@@ -137,8 +137,8 @@
 
                 @elseif($serviceFile->type == 'zip')
 
-                    <iframe
-                        src="{{ $serviceFile->file }}">
+                    <iframe 
+                        src="{{ $serviceFile->file }}"  allowFullScreen="true">
                     </iframe>
 
                 @elseif($serviceFile->type == '360')
