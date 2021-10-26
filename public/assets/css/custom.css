@@ -706,7 +706,10 @@ iframe,video{
     height: 100%;
     width: 100%;
 }
-
+ .iframe--alto iframe{
+   height: 100vh;
+    width: 100%;
+}
 .pswp__img {
 
     top: -45px!important;
@@ -722,4 +725,7 @@ iframe,video{
     position: absolute;
     top: 0;
     z-index: -1;
+}
+a:focus {
+    color: transparent;
 }

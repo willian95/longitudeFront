@@ -29,14 +29,14 @@
   </div>
 
   @if($service->fileAmount == 1)
-    <div class="grid grid-main grid-details">
+    <div class="grid grid-main grid-details iframe--alto">
 
         @foreach($files as $serviceFile)
 
             <div class="item" data-aos="fade-up"
         data-aos-easing="linear"
         data-aos-duration="2100">
-            
+
                 @if($serviceFile->type == 'png' || $serviceFile->type == 'jpg')
                     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                         <a href="{{ $serviceFile->file }}" data-caption="Sunset in the wheat field<br><em class='text-muted'>© Jordan McQueen</em>" data-width="1200" data-height="900" itemprop="contentUrl">
@@ -44,7 +44,7 @@
                         </a>
                         {{--<p>Zenith</p>--}}
                     </figure>
-                
+
                 @elseif($serviceFile->type == 'mp4')
 
                     <video controls class="w-100">
@@ -67,18 +67,18 @@
             </div>
 
         @endforeach
-    
+
     </div>
 
   @endif
 
   @if($service->fileAmount == 9 || $service->fileAmount == 6)
-    <!-----------grid-3-------------> 
+    <!-----------grid-3------------->
     <div class="grid grid-main grid-details gallery grid-3" id="gallery">
         @foreach($files as $serviceFile)
 
             <div class="item">
-            
+
                 @if($serviceFile->type == 'png' || $serviceFile->type == 'jpg')
                     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                         <a href="{{ $serviceFile->file }}" data-caption="Sunset in the wheat field<br><em class='text-muted'>© Jordan McQueen</em>" data-width="1200" data-height="900" itemprop="contentUrl">
@@ -86,7 +86,7 @@
                         </a>
                         {{--<p>Zenith</p>--}}
                     </figure>
-                
+
                 @elseif($serviceFile->type == 'mp4')
 
                     <video controls class="w-100">
@@ -99,7 +99,7 @@
                     <iframe
                         src="{{ $serviceFile->file }}"  allowFullScreen="true">
                     </iframe>
-                
+
                 @elseif($serviceFile->type == '360')
 
                     {!! $serviceFile->file !!}
@@ -114,12 +114,12 @@
     @endif
 
     @if($service->fileAmount == 4)
-    <!-----------grid-3-------------> 
+    <!-----------grid-3------------->
     <div class="grid grid-main grid-details gallery grid-2" id="gallery">
         @foreach($files as $serviceFile)
 
             <div class="item">
-            
+
                 @if(strtoupper($serviceFile->type) == 'PNG' || strtoupper($serviceFile->type) == 'JPG')
                     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                         <a href="{{ $serviceFile->file }}" data-caption="Sunset in the wheat field<br><em class='text-muted'>© Jordan McQueen</em>" data-width="1200" data-height="900" itemprop="contentUrl">
@@ -127,7 +127,7 @@
                         </a>
                         {{--<p>Zenith</p>--}}
                     </figure>
-                
+
                 @elseif(strtoupper($serviceFile->type) == 'MP4')
 
                     <video controls class="w-100">
@@ -137,12 +137,12 @@
 
                 @elseif(strtoupper($serviceFile->type) == 'ZIP')
 
-                    
-                        <iframe 
+
+                        <iframe
                             src="{{ $serviceFile->file }}"  allowFullScreen="true">
                         </iframe>
-                    
-             
+
+
 
                 @elseif($serviceFile->type == '360')
 

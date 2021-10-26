@@ -1,11 +1,17 @@
 <footer>
   <div>
-    <a href="https://www.facebook.com/longittude360"><i class="fa fa-facebook-square" aria-hidden="true"></i>
+    <a target="_blank" href="https://www.facebook.com/longittude360"><i class="fa fa-facebook-square" aria-hidden="true"></i>
     </a>
-    <a href="https://www.instagram.com/longittude360/"><i class="fa fa-instagram" aria-hidden="true"></i>
+    <a target="_blank" href="https://www.instagram.com/longittude360/"><i class="fa fa-instagram" aria-hidden="true"></i>
     </a>
-    <a href="https://www.linkedin.com/company/longittude"><i class="fa fa-linkedin-square" aria-hidden="true"></i>
+    <a target="_blank" href="https://www.linkedin.com/company/longittude"><i class="fa fa-linkedin-square" aria-hidden="true"></i>
     </a>
+    <a target="_blank" href="https://vimeo.com/523817426">
+    <i class="fa fa-vimeo-square" aria-hidden="true"></i>
+    </a>
+
+
+
   </div>
 </footer>
 <a  class="ws" target="_blank" href="https://api.whatsapp.com/send?phone=++573008396367&text=Hola!%20Quiero%20m%C3%A1s%20informaci%C3%B3n.%20C&P"><i class="fa fa-whatsapp" aria-hidden="true"></i>
