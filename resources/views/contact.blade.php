@@ -39,7 +39,7 @@
         <p class="mb-0"> Santa Marta -Colombia</p>
         <p class="mb-0"> Telefóno:</p>
         <a class="" href="tel:   (+57) 300 8396357"> (+57) 300 8396357</a> <br> <br>
-        <a href="mailto: m.cadavid@longittude.co">e-mail: m.cadavid@longittude.co</a>
+        <a href="mailto: comercial@longittude.co">e-mail: comercial@longittude.co</a>
       </div>
     </div>
   </div>

@@ -166,9 +166,10 @@
   }
 
   footer div {
-    position: relative;
-    margin-top: 2rem;
-  }
+      position: relative;
+      margin-top: 2rem;
+      left: 50%;
+    }
 </style>
 
 @endsection

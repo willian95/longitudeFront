@@ -103,7 +103,16 @@
  </div>
 
 </section>
-
+<style>
+     footer div {
+        position: relative;
+    margin-top: 2rem;
+    left: 50%;
+    }
+    footer a, footer i {
+    color: #112129;
+    margin: 2px;
+</style>
 @endsection
 
 
