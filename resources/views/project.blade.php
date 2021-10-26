@@ -25,6 +25,7 @@
     <h2 data-aos="fade-right"
      data-aos-easing="linear"
      data-aos-duration="1500" class="title">{{ $project->title }}</h2>
+     {!! $project->description !!}
     {{--<p class="parraf">
       Video <br>
       Renders 2D

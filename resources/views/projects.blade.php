@@ -34,6 +34,7 @@
 
           <img src="{{ $project->image }}" alt="">
           <p>{{ $project->title }}</p>
+          
 
         </div>
       </a>
