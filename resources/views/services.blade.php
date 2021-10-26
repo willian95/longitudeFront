@@ -12,6 +12,9 @@
 <style>
   .navbar-nav a {
     color: #000;
+
+    font-weight: 600;
+
   }
 
   header {
@@ -116,9 +119,10 @@
     footer div {
       position: relative;
       margin-top: 2rem;
+      left: 50%;
     }
     .hamburger-inner,.hamburger-inner::before, .hamburger-inner::after {
- 
+
     background-color: #124f8b;
     }
   </style>

@@ -25,6 +25,7 @@
     <h2 data-aos="fade-right"
      data-aos-easing="linear"
      data-aos-duration="1500" class="title">{{ $project->title }}</h2>
+     {!! $project->description !!}
     {{--<p class="parraf">
       Video <br>
       Renders 2D
@@ -103,7 +104,16 @@
  </div>
 
 </section>
-
+<style>
+     footer div {
+        position: relative;
+    margin-top: 2rem;
+    left: 50%;
+    }
+    footer a, footer i {
+    color: #112129;
+    margin: 2px;
+</style>
 @endsection
 
 

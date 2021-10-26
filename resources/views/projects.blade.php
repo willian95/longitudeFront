@@ -27,13 +27,14 @@
 
   </div>
   <div class="grid-proyecto">
-    
+
     @foreach(App\Models\Project::all() as $project)
       <a href="{{ url('/project/'.$project->id) }}" class="item">
         <div>
 
           <img src="{{ $project->image }}" alt="">
           <p>{{ $project->title }}</p>
+          
 
         </div>
       </a>
@@ -51,9 +52,10 @@
     footer div {
       position: relative;
       margin-top: 2rem;
+      left: 50%;
     }
     .hamburger-inner,.hamburger-inner::before, .hamburger-inner::after {
- 
+
  background-color: #124f8b;
  }
   </style>
