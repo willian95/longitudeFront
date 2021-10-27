@@ -1,7 +1,7 @@
 
 @media only screen and (max-width:600px) {
     .color-xs{
-        color: #0c4572;
+        color: #0c4572!important;
       }
   .brand img {
     margin: 0;
