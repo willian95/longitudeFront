@@ -20,7 +20,7 @@
 </head>
 
 <body>
-  
+
   <header>
     <nav class="navbar navbar-expand-md navbar-fixed-js">
       <div class="container flex-content">
@@ -40,6 +40,12 @@
         </button>
         <div class="offcanvas-collapse fil" id="navbarNav">
           <ul class="navbar-nav">
+          <li class="nav-item mr-5">
+              <a data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="3000" style="color: #fff;" class="nav-link nav-link-black" data-toggle="modal" data-target=".reel" >
+                REEL</a>
+            </li>
             <li class="nav-item mr-5">
               <a data-aos="fade-down"
               data-aos-easing="linear"
@@ -64,4 +70,3 @@
     </nav>
   </header>
 
-  

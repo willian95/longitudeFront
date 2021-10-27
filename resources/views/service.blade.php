@@ -170,6 +170,10 @@
       margin-top: 2rem;
       left: 50%;
     }
+    .grid-section {
+
+ margin-bottom: 7rem;
+}
 </style>
 
 @endsection

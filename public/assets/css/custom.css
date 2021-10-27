@@ -183,7 +183,7 @@ header{
   letter-spacing: 1;
   color: #fff;
   font-size: 1.2rem;
-  font-weight: 100;
+  font-weight: 600;
 }
 
 
@@ -570,7 +570,7 @@ header{
   display: grid;
   grid-template-columns: 16% 83%;
   gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 3.5rem;
 }
 .container-main{
   width: 100%;
@@ -687,6 +687,9 @@ footer div{
   font-size: 1.5rem;
   border-radius: 50px;
   color: #fff;
+  width: 50px;
+    align-items: center;
+    text-align: center;
 }
 .grid-3{
   display: grid;
@@ -715,9 +718,11 @@ iframe,video{
     height: 40vh;
     object-fit: cover;
 }
-.grid-details iframe{
+.grid iframe{
     height: 100vh;
+    object-fit: cover;
 }
+
 .pswp__img {
 
     top: -45px!important;
@@ -736,4 +741,18 @@ iframe,video{
 }
 a:focus {
     color: transparent;
+}
+.reel .close {
+    right: 1rem;
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 200;
+    top: 2rem;
+    z-index: 9;
+    position: absolute;
+}
+.reel .modal-dialog {
+    max-width: 840px;
+    height: 72vh;
+    overflow: hidden;
 }
