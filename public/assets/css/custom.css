@@ -715,6 +715,10 @@ iframe,video{
     height: 40vh;
     object-fit: cover;
 }
+.grid iframe{
+    height: 100vh;
+    object-fit: cover;
+}
 
 .pswp__img {
 
