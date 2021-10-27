@@ -687,6 +687,9 @@ footer div{
   font-size: 1.5rem;
   border-radius: 50px;
   color: #fff;
+  width: 50px;
+    align-items: center;
+    text-align: center;
 }
 .grid-3{
   display: grid;
@@ -738,4 +741,18 @@ iframe,video{
 }
 a:focus {
     color: transparent;
+}
+.reel .close {
+    right: 1rem;
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 200;
+    top: 2rem;
+    z-index: 9;
+    position: absolute;
+}
+.reel .modal-dialog {
+    max-width: 840px;
+    height: 72vh;
+    overflow: hidden;
 }

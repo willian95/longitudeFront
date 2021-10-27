@@ -81,5 +81,26 @@
   AOS.init();
 </script>
 
+<!-- Modal -->
+<div class="modal fade reel" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body p-0">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      <video id="bgdvid" autoplay loop playsinline muted>
+                <source src="{{ url('/assets/img/banner1.mp4') }}#t=0.1" type="video/mp4">
+                <source src="{{ url('/assets/img/banner1.mp4') }}#t=0.1" type="video/ogg">
+
+                Your browser does not support HTML5 video.
+            </video>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
