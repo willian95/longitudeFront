@@ -570,7 +570,7 @@ header{
   display: grid;
   grid-template-columns: 16% 83%;
   gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 3.5rem;
 }
 .container-main{
   width: 100%;
