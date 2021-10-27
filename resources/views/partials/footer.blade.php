@@ -90,8 +90,8 @@
           <span aria-hidden="true">&times;</span>
         </button>
       <video id="bgdvid" autoplay loop playsinline muted>
-                <source src="{{ url('/assets/img/banner1.mp4') }}#t=0.1" type="video/mp4">
-                <source src="{{ url('/assets/img/banner1.mp4') }}#t=0.1" type="video/ogg">
+                <source src="{{ url('/assets/img/banner2.mp4') }}#t=0.1" type="video/mp4">
+                <source src="{{ url('/assets/img/banner2.mp4') }}#t=0.1" type="video/ogg">
 
                 Your browser does not support HTML5 video.
             </video>
