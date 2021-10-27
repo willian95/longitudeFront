@@ -757,5 +757,5 @@ a:focus {
     overflow: hidden;
 }
 .color-xs{
-  color: #fff;
+  color: #fff!important;
 }
