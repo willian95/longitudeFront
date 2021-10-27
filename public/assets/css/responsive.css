@@ -3,6 +3,9 @@
     .color-xs{
         color: #0c4572!important;
       }
+      .reel .close {
+        top: 4rem ;
+      }
   .brand img {
     margin: 0;
 
