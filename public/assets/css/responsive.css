@@ -1,8 +1,11 @@
 
 @media only screen and (max-width:600px) {
+    .color-xs{
+        color: #00000069;
+      }
   .brand img {
     margin: 0;
- 
+
 }
 .flex-content{
   display: grid!important;
@@ -42,7 +45,7 @@
 .navbar-expand-md .navbar-nav {
 
   line-height: 2;
- 
+
 }
 .navbar-nav .mr-5 {
   margin-right: 0rem!important;
