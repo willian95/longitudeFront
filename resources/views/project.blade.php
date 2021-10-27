@@ -93,6 +93,10 @@
                     src="{{ $serviceFile->file }}" class="w-100"  allowFullScreen="true">
                 </iframe>
 
+            @elseif(strtoupper($serviceFile->type) == '360')
+
+                {!! $serviceFile->file !!}
+
             @endif
 
         </div>
