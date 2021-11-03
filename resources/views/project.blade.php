@@ -59,6 +59,12 @@
                 src="{{ $project->file }}" class="w-100" style="min-height: 400px"  allowFullScreen="true">
             </iframe>
 
+        @elseif($project->type == '360')
+
+            <iframe
+                src="{{ $project->file }}" class="w-100" style="min-height: 400px"  allowFullScreen="true">
+            </iframe>
+
         @endif
 
     </div>
