@@ -756,3 +756,6 @@ a:focus {
     height: 72vh;
     overflow: hidden;
 }
+.color-xs{
+  color: #fff!important;
+}
