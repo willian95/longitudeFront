@@ -60,7 +60,9 @@
 
                 @elseif($serviceFile->type == '360')
 
-                    {!! $serviceFile->file !!}
+                    <div class="embed360 w-100">
+                        <img src="{{ $serviceFile->file }}" class="w-100" >
+                    </div>
 
                 @endif
 

@@ -77,8 +77,10 @@
 
 <script src="{{ url('/assets/js/custom.js') }}"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="{{ url('/assets/js/embed360.js') }}"></script>
 <script>
   AOS.init();
+  embed360('.embed360');
 </script>
 
 <!-- Modal -->
