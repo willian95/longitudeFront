@@ -178,8 +178,22 @@
     }
     .grid-section {
 
- margin-bottom: 7rem;
-}
+        margin-bottom: 7rem;
+    }
+
+    @media (min-width: 1700px) and (max-width: 1900px){
+        iframe {
+            height: 500px;
+        }
+    }
+
+    @media (min-width: 1900px) {
+        iframe {
+            height: 700px;
+        }
+    }
+
+
 </style>
 
 @endsection

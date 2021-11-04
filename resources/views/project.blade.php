@@ -22,7 +22,8 @@
 
 <section class="main-services grid-section container-main ">
   <div>
-    <h2 data-aos="fade-right"
+    <h2 
+    data-aos="fade-right"
      data-aos-easing="linear"
      data-aos-duration="1500" class="title">{{ $project->title }}</h2>
      {!! $project->description !!}
@@ -107,6 +108,10 @@
 
             @endif
 
+            <div class="embed360 w-100">
+                <img src="https://images.unsplash.com/photo-1635910162005-4a295b1bcca6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80" alt="">
+            </div>
+
         </div>
 
         @endforeach
@@ -125,6 +130,18 @@
     footer a, footer i {
     color: #112129;
     margin: 2px;
+    }
+    @media (min-width: 1700px) and (max-width: 1900px){
+        iframe {
+            height: 500px;
+        }
+    }
+
+    @media (min-width: 1900px) {
+        iframe {
+            height: 700px;
+        }
+    }
 </style>
 @endsection
 
