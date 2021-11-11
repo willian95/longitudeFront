@@ -20,19 +20,19 @@ Route::get('/', function () {
 
 Route::view("contact", "contact")->name("contact");
 Route::view("services", "services")->name("services");
-Route::get("service/{id}", function($id){
+Route::get("service/{slug}", function($id){
 
-    $service = App\Models\Service::where("id", $id)->first();
-    $files = App\Models\ServiceFile::where("service_id", $id)->get();
+    $service = App\Models\Service::where("slug", $slug)->first();
+    $files = App\Models\ServiceFile::where("service_id", $service->id)->get();
     return view("service", ["service" => $service, "files" => $files]);
 
 });
 
 Route::view("projects", "projects")->name("projects");
-Route::get("project/{id}", function($id){
+Route::get("project/{slug}", function($id){
 
-    $project = App\Models\Project::where("id", $id)->first();
-    $files = App\Models\File::where("project_id", $id)->get();
+    $project = App\Models\Project::where("slug", $slug)->first();
+    $files = App\Models\File::where("project_id", $project->id)->get();
     return view("project", ["project" => $project, "files" => $files]);
 
 });

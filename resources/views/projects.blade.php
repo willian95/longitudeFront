@@ -29,7 +29,7 @@
   <div class="grid-proyecto">
 
     @foreach(App\Models\Project::all() as $project)
-      <a href="{{ url('/project/'.$project->id) }}" class="item">
+      <a href="{{ url('/project/'.$project->slug) }}" class="item">
         <div>
 
           <img src="{{ $project->image }}" alt="">

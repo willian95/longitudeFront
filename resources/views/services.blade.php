@@ -45,7 +45,7 @@
       animaciones y realidad virtual.</p>
   </div>
   <div class="grid grid-main">
-    <a href="{{ url('service/1') }}" class="item" data-aos="fade-up"
+    <a href="{{ url('service/'.App\Models\Service::find(1)->slug) }}" class="item" data-aos="fade-up"
      data-aos-easing="linear"
      data-aos-duration="2100">
       <div>
@@ -55,7 +55,7 @@
 
       </div>
     </a>
-    <a href="{{ url('service/2') }}" class="item" data-aos="fade-up"
+    <a href="{{ url('service/'.App\Models\Service::find(2)->slug) }}" class="item" data-aos="fade-up"
      data-aos-easing="linear"
      data-aos-duration="2200">
       <div>
@@ -63,7 +63,7 @@
         <p> {{ App\Models\Service::find(2)->title }}</p>
       </div>
     </a>
-    <a href="{{ url('service/3') }}" class="item" data-aos="fade-up"
+    <a href="{{ url('service/'.App\Models\Service::find(3)->slug) }}" class="item" data-aos="fade-up"
      data-aos-easing="linear"
      data-aos-duration="2100">
       <div>
@@ -71,7 +71,7 @@
         <p> {{ App\Models\Service::find(3)->title }} </p>
       </div>
     </a>
-    {{--<a href="{{ url('service/4') }}" class="item" data-aos="fade-up"
+    {{--<a href="{{ url('service/'.App\Models\Service::find(4)->slug) }}" class="item" data-aos="fade-up"
      data-aos-easing="linear"
      data-aos-duration="2100">
       <div>
@@ -79,7 +79,7 @@
         <p> {{ App\Models\Service::find(4)->title }} </p>
       </div>
     </a>--}}
-    <a href="{{ url('service/5') }}" class="item" data-aos="fade-up"
+    <a href="{{ url('service/'.App\Models\Service::find(5)->slug) }}" class="item" data-aos="fade-up"
      data-aos-easing="linear"
      data-aos-duration="2100">
       <div>
@@ -87,7 +87,7 @@
         <p>{{ App\Models\Service::find(5)->title }}</p>
       </div>
     </a>
-    <a href="{{ url('service/6') }}" class="item" data-aos="fade-up"
+    <a href="{{ url('service/'.App\Models\Service::find(6)->slug) }}" class="item" data-aos="fade-up"
      data-aos-easing="linear"
      data-aos-duration="2100">
       <div>
@@ -97,7 +97,7 @@
 
       </div>
     </a>
-    <a href="{{ url('service/7') }}" class="item" data-aos="fade-up"
+    <a href="{{ url('service/'.App\Models\Service::find(7)->slug) }}" class="item" data-aos="fade-up"
      data-aos-easing="linear"
      data-aos-duration="2100">
       <div>
