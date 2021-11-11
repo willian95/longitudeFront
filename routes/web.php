@@ -20,7 +20,7 @@ Route::get('/', function () {
 
 Route::view("contact", "contact")->name("contact");
 Route::view("services", "services")->name("services");
-Route::get("service/{slug}", function($id){
+Route::get("service/{slug}", function($slug){
 
     $service = App\Models\Service::where("slug", $slug)->first();
     $files = App\Models\ServiceFile::where("service_id", $service->id)->get();
@@ -29,7 +29,7 @@ Route::get("service/{slug}", function($id){
 });
 
 Route::view("projects", "projects")->name("projects");
-Route::get("project/{slug}", function($id){
+Route::get("project/{slug}", function($slug){
 
     $project = App\Models\Project::where("slug", $slug)->first();
     $files = App\Models\File::where("project_id", $project->id)->get();
