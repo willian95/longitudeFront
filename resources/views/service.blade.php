@@ -84,14 +84,14 @@
                 @if($serviceFile->type == 'png' || $serviceFile->type == 'jpg')
                     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                         <a href="{{ $serviceFile->file }}" data-caption="Sunset in the wheat field<br><em class='text-muted'>© Jordan McQueen</em>" data-width="1200" data-height="900" itemprop="contentUrl">
-                            <img src="{{ $serviceFile->file }}" itemprop="thumbnail" alt="Image description" class="w-100">
+                            <img src="{{ $serviceFile->file }}" itemprop="thumbnail" alt="Image description" class="w-100" style="height: 50vh;">
                         </a>
                         {{--<p>Zenith</p>--}}
                     </figure>
 
                 @elseif($serviceFile->type == 'mp4')
 
-                    <video controls class="w-100">
+                    <video controls class="w-100" style="height: 50vh;">
                         <source src="{{ $serviceFile->file }}" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -99,7 +99,7 @@
                 @elseif($serviceFile->type == 'zip')
 
                     <iframe
-                        src="{{ $serviceFile->file }}"  allowFullScreen="true">
+                        src="{{ $serviceFile->file }}"  allowFullScreen="true" style="height: 50vh;">
                     </iframe>
 
                 @elseif($serviceFile->type == '360')
