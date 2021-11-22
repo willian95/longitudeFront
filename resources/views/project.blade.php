@@ -89,7 +89,7 @@
 
             @elseif(strtoupper($serviceFile->type) == 'MP4')
 
-                <video controls class="w-100">
+                <video controls class="w-100" style="height: 250px;" >
                     <source src="{{ $serviceFile->file }}" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -97,12 +97,12 @@
             @elseif(strtoupper($serviceFile->type) == 'ZIP')
 
                 <iframe
-                    src="{{ $serviceFile->file }}" class="w-100"  allowFullScreen="true">
+                    src="{{ $serviceFile->file }}" style="height: 250px;" class="w-100"  allowFullScreen="true">
                 </iframe>
 
             @elseif(strtoupper($serviceFile->type) == '360')
 
-                <div class="embed360 w-100">
+                <div class="w-100">
                     <img src="{{ $serviceFile->file }}" class="w-100" >
                 </div>
 

@@ -39,25 +39,25 @@
         </button>
         <div class="offcanvas-collapse fil" id="navbarNav">
           <ul class="navbar-nav">
-          <li class="nav-item mr-5">
+          <li class="nav-item mr-5 text-right">
               <a data-aos="fade-down"
               data-aos-easing="linear"
               data-aos-duration="3000" style="color: #000;" class="nav-link nav-link-black" data-toggle="modal" data-target=".reel" >
                 REEL</a>
             </li>
-            <li class="nav-item mr-5">
+            <li class="nav-item mr-5 text-right">
               <a data-aos="fade-down"
               data-aos-easing="linear"
               data-aos-duration="3000" class="nav-link nav-link-black" href="{{ route('services') }}">
                 SERVICIOS</a>
             </li>
-            <li class="nav-item mr-5">
+            <li class="nav-item mr-5 text-right">
               <a data-aos="fade-down"
               data-aos-easing="linear"
               data-aos-duration="2500" class="nav-link nav-link-black" href="{{ route('projects') }}">
                 PROYECTOS</a>
             </li>
-            <li class="nav-item mr-5">
+            <li class="nav-item mr-5 text-right">
               <a data-aos="fade-down"
               data-aos-easing="linear"
               data-aos-duration="1000" class="nav-link nav-link-black" href="{{ route('contact') }}">

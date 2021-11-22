@@ -706,6 +706,10 @@ footer div{
   grid-column: initial;
 }
 
+iframe{
+  border:none;
+}
+
 iframe,video{
     height: 100%;
     width: 100%;
