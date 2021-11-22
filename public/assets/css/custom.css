@@ -106,11 +106,13 @@ font-family: 'Rajdhani', sans-serif;
 .hamburger--elastic.is-active .hamburger-inner::before {
   transition-delay: 0s;
   opacity: 0;
+  background: #0c4572;
 }
 
 .hamburger--elastic.is-active .hamburger-inner::after {
   transform: translate3d(0, -20px, 0) rotate(-270deg);
   transition-delay: 0.075s;
+  background: #0c4572;
 }
 
 @media (max-width: 767px) {
@@ -123,13 +125,18 @@ font-family: 'Rajdhani', sans-serif;
     padding-right: 1rem;
     padding-left: 1rem;
     overflow-y: hidden;
-    background-color: #fff;
+    background-color: #ffffffed;
     transition: -webkit-transform 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out,
       -webkit-transform 0.3s ease-in-out;
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
+  }
+
+  .filter{
+      filter: invert(1);
+      z-index: 9;
   }
 }
 
@@ -559,7 +566,7 @@ header{
 
 /* Grid Item */
 .item {
-	margin: 5px;
+	padding: 5px;
 	font-size: 1.5em;
 }
 .item:hover {
@@ -756,7 +763,7 @@ a:focus {
     position: absolute;
 }
 .reel .modal-dialog {
-    max-width: 840px;
+    max-width: 1106px;
     height: 72vh;
     overflow: hidden;
 }

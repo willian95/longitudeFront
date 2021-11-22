@@ -21,6 +21,7 @@
 }
 .navbar-toggler{
   text-align: end;
+  z-index: 1;
 }
 .video-overlay-play:after {
 
@@ -37,13 +38,20 @@
 #navbarNav {
   position: fixed;
   right: inherit;
-  top: 3rem;
+  top: 0;
   text-align: center;
   padding-top: 4rem;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 .navbar-nav a {
   color: #0c4572;
 
+}
+.navbar-nav .text-right {
+    text-align: center!important;
 }
 .navbar-expand-md .navbar-nav {
 

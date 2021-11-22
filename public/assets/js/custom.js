@@ -19,11 +19,16 @@ $(function () {
 	$('[data-toggle="offcanvas"]').on("click", function () {
 			$(".offcanvas-collapse").toggleClass("open");
 			$("body").toggleClasss("offcanvas-expanded");
+
+
 	});
 });
-
+$(".brand-xs").removeClass("filter");
 $(".hamburger").on("click", function () {
 	$(this).toggleClass("is-active");
+    $(".offcanvas-collapse").removeClass("open");
+    $(".brand-xs").addClass("filter");
+
 });
 
 $(".nav-link").click(function () {
