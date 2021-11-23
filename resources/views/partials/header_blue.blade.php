@@ -42,7 +42,7 @@
           <li class="nav-item mr-5 text-right">
               <a data-aos="fade-down"
               data-aos-easing="linear"
-              data-aos-duration="3000" href="#" style="color: #000;" class="nav-link nav-link-black" data-toggle="modal" data-target=".reel" >
+              data-aos-duration="3000" href="#" style="color: #000; cursor: pointer;" class="nav-link nav-link-black" data-toggle="modal" data-target=".reel" >
                 REEL</a>
             </li>
             <li class="nav-item mr-5 text-right">
