@@ -22,7 +22,7 @@
 
 <section class="main-services grid-section container-main ">
   <div>
-    <h2 
+    <h2
     data-aos="fade-right"
      data-aos-easing="linear"
      data-aos-duration="1500" class="title">{{ $project->title }}</h2>
@@ -49,13 +49,12 @@
 
         @elseif($project->type == 'mp4')
 
-            <video controls class="w-100">
+            <video controls class="w-100" style="object-fit: cover;">
                 <source src="{{ $project->file }}" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
 
         @elseif($project->type == 'zip')
-
             <iframe
                 src="{{ $project->file }}" class="w-100" style="min-height: 400px"  allowFullScreen="true">
             </iframe>
@@ -89,7 +88,7 @@
 
             @elseif(strtoupper($serviceFile->type) == 'MP4')
 
-                <video controls class="w-100" style="height: 250px;" >
+                <video controls class="w-100" style="height: 250px; object-fit: cover;" >
                     <source src="{{ $serviceFile->file }}" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -118,6 +117,10 @@
 
 </section>
 <style>
+   .grid-details video{
+        width: 100%!important;
+    object-fit: cover!important;
+    }
      footer div {
         position: relative;
     margin-top: 2rem;

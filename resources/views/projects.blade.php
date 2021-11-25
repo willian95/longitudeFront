@@ -32,9 +32,9 @@
       <a href="{{ url('/project/'.$project->slug) }}" class="item">
         <div>
 
-          <img src="{{ $project->image }}" alt="">
+          <img class="image-proyectos" src="{{ $project->image }}" alt="">
           <p>{{ $project->title }}</p>
-          
+
 
         </div>
       </a>

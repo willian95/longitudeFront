@@ -27,6 +27,7 @@
   gtag('config', 'G-9S99WQ3T1H');
 </script>
 
+<link rel="shortcut icon" type="image/x-icon" href="{{ url('/assets/img/iso.png') }}">
 </head>
 
 <body>

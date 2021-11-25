@@ -99,7 +99,7 @@
                 @elseif($serviceFile->type == 'zip')
 
                     <iframe
-                        src="{{ $serviceFile->file }}"  allowFullScreen="true" style="height: 50vh;">
+                        src="{{ $serviceFile->file }}"  allowFullScreen="true" style="height: 35vh;">
                     </iframe>
 
                 @elseif($serviceFile->type == '360')

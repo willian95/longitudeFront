@@ -724,16 +724,19 @@ iframe,video{
  .iframe--alto iframe{
    height: 100vh;
     width: 100%;
+    object-fit: cover;
 }
 .grid-2 iframe{
-    height: 40vh;
+    height: 40vh!important;
     object-fit: cover;
 }
 .grid iframe{
-    height: 100vh;
+  height: auto;
     object-fit: cover;
 }
-
+.iframe--alto iframe{
+    height: 100vh;
+}
 .pswp__img {
 
     top: -45px!important;
@@ -749,6 +752,9 @@ iframe,video{
     position: absolute;
     top: 0;
     z-index: -1;
+}
+.image-proyectos{
+
 }
 a:focus {
     color: transparent;
