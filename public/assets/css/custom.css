@@ -727,7 +727,7 @@ iframe,video{
     object-fit: cover;
 }
 .grid-2 iframe{
-    height: 40vh;
+    height: 40vh!important;
     object-fit: cover;
 }
 .grid iframe{
