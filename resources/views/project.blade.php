@@ -49,7 +49,7 @@
 
         @elseif($project->type == 'mp4')
 
-            <video controls class="w-100">
+            <video controls class="w-100" style="object-fit: cover;">
                 <source src="{{ $project->file }}" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -89,7 +89,7 @@
 
             @elseif(strtoupper($serviceFile->type) == 'MP4')
 
-                <video controls class="w-100" style="height: 250px;" >
+                <video controls class="w-100" style="height: 250px; object-fit: cover;" >
                     <source src="{{ $serviceFile->file }}" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
