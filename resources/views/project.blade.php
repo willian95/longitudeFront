@@ -22,7 +22,7 @@
 
 <section class="main-services grid-section container-main ">
   <div>
-    <h2 
+    <h2
     data-aos="fade-right"
      data-aos-easing="linear"
      data-aos-duration="1500" class="title">{{ $project->title }}</h2>
@@ -118,6 +118,10 @@
 
 </section>
 <style>
+    video{
+        width: 100%;
+    object-fit: cover;
+    }
      footer div {
         position: relative;
     margin-top: 2rem;
