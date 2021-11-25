@@ -117,9 +117,9 @@
 
 </section>
 <style>
-    video{
-        width: 100%;
-    object-fit: cover;
+   .grid-details video{
+        width: 100%!important;
+    object-fit: cover!important;
     }
      footer div {
         position: relative;
