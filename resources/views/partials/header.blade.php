@@ -16,6 +16,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/photoswipe.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.0/default-skin/default-skin.css">
 <link rel="stylesheet" href="{{ url('/assets/css/responsive.css') }}">
+	<link rel="shortcut icon" type="image/x-icon" href="{{ url('/assets/img/logo_white.svg') }}">
 
 </head>
 
