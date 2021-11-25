@@ -55,7 +55,6 @@
             </video>
 
         @elseif($project->type == 'zip')
-
             <iframe
                 src="{{ $project->file }}" class="w-100" style="min-height: 400px"  allowFullScreen="true">
             </iframe>
