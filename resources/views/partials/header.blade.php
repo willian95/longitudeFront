@@ -19,14 +19,15 @@
 	<link rel="shortcut icon" type="image/x-icon" href="{{ url('/assets/img/iso.png') }}">
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9S99WQ3T1H"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-213690918-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-9S99WQ3T1H');
+  gtag('config', 'UA-213690918-1');
 </script>
+
 
 
 </head>
