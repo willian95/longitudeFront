@@ -22,16 +22,23 @@
 
       <div class="col-md-6">
         <p>CONTÁCTANOS</p>
-        <form action="">
-          <input type="text" placeholder="Nombre">
-          <input type="text" placeholder="Correo eletrónico:">
-          <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje:
-"></textarea>
+          <form>
+          <input type="text" placeholder="Nombre" id="name-message">
+          <input type="text" placeholder="Correo eletrónico:" id="email-message">
+          <textarea name="" id="message-message" cols="30" rows="10" placeholder="Mensaje:" ></textarea>
 
           <div class="text-md-right">
-            <button class="btns">Enviar</button>
+            <button type="button" id="buttonSendMessage" class="btns"  onclick="sendMessage()">Enviar</button>
           </div>
-        </form>
+          </form>
+
+          <div id="spinner" style="display:none">
+            Enviando...
+        </div>
+        <div class="col-md-12 text-center">
+          <div class="cf-msg"></div>
+        </div>
+    
       </div>
       <div class="col-md-6 mt-5 pt-4">
         <p>DIRECCIÓN</p>
@@ -44,6 +51,40 @@
     </div>
   </div>
 </div>
+
+<script>
+        function sendMessage() {
+
+            let email = $("#email-message").val()
+            let name = $("#name-message").val()
+            let message = $("#message-message").val()
+
+            $("#buttonSendMessage").css("display", "none")
+            $("#spinner").css("display", "block")
+
+            $.post("{{ url('/send/message') }}", {
+            "email": email,
+            "name": name,
+            "text": message,
+            "_token": "{{ csrf_token() }}"
+            }, function(data) {
+
+            $("#buttonSendMessage").css("display", "block")
+            $("#spinner").css("display", "none")
+
+            $("#email-message").val("")
+            $("#name-message").val("")
+            $("#message-message").val("")
+
+            swal({
+                icon: "success",
+                text: "Mensaje enviado"
+            })
+
+            })
+
+        }
+    </script>
 
 @endsection
 
