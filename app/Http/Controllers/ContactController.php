@@ -12,6 +12,9 @@ class ContactController extends Controller
         $to_email = $request->email;
         $data = ["messageMail" => $request->text, "name" => $to_name, "email"=> $to_email];
 
+        dump(env('MAIL_USERNAME'));
+        dump(env('MAIL_PASSWORD'));
+
         \Mail::send("emails.emailUser", $data, function($message) {
 
             $message->to("contacto@lattitude.co",)->subject("Contact");
